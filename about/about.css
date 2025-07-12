@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('back3.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    color: #ffffff;
+    overflow-x: hidden;
+    background-color: #000; 
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+.hero-section h1 {
+    color: #ffffff;
+}
+
+.hero-section .tagline {
+    color: #e4e4e4;
+}
+
+.mission-section {
+    background: none;
+    backdrop-filter: none;
+    color: #ffffff;
+    padding: 20px;
+    position: relative;
+}
+
+.mission-section h2 {
+    color: #e74c3c;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 12px;
+    background: none;
+    border-radius: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: none;
+    transform: translateY(-30px);
+}
+
+.hero-section {
+    margin-top: -20px;
+}
+
+.hero-section h1 {
+    color: #ffffff;
+}
+
+.hero-section .tagline {
+    color: #e4e4e4;
+}
+
+
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    color: #00ffff; 
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    animation: fadeInDown 0.8s ease-out;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.hero-section .tagline {
+    font-size: 1.8rem;
+    color: #7fffd4; 
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+    text-shadow: 0 0 8px rgba(127, 255, 212, 0.5);
+}
+
+.mission-section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-out;
+    position: relative;
+}
+
+.mission-section h2 {
+    color: #00ffff;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    animation: slideDown 0.8s ease-out;
+    position: relative;
+}
+
+.mission-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #00ffff, transparent);
+    animation: glow 2s infinite;
+}
+
+.mission-section p {
+    color: #7fffd4;
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 15px;
+    animation: slideUp 0.8s ease-out 0.3s backwards;
+    text-shadow: 0 0 8px rgba(127, 255, 212, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #00ffff;
+    }
+    50% {
+        box-shadow: 0 0 20px #00ffff;
+    }
+    100% {
+        box-shadow: 0 0 5px #00ffff;
+    }
+}
+
+@media (max-width: 768px) {
+    .mission-section {
+        padding: 20px;
+    }
+    
+    .mission-section h2 {
+        font-size: 2em;
+    }
+    
+    .mission-section p {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+}

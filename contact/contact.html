@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us-bit4bYte</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" type="image/x-icon" href="icon.svg"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="home-btn">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <h1>Contact Us</h1>
+        
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h2>Send us a message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label>Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label>Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="queryType" required>
+                            <option value="">Select Your Query Type</option>
+                            <option value="ai_chatbot">AI Chatbot Support</option>
+                            <option value="translation">Translation Services</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="business">Business Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="otherQueryDiv" style="display: none;">
+                        <input type="text" id="otherQuery">
+                        <label>Specify Your Query</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label>Your Message</label>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            
+
+        <div class="contact-info">
+            <div class="info-item">
+                <a href="https://maps.app.goo.gl/XWmCSeWv8SLZfQSAA" target="_blank" class="map-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>P.I.E.T, Grand Trunk Rd, Samalkha, Haryana 132102</p>
+                </a>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+91 99887766</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>sample@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>

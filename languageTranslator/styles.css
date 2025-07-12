@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&family=Protest+Guerrilla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body{
+    background-color: #003a52;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 650px;
+    height: 600px;
+    background: linear-gradient(to top,#012e4d,#007ea7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.text{
+    height: 260px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+#fromText ,#toText{
+    height: 260px;
+    width: 100%;
+    margin-left: 7px;
+    color: black;
+    background-color: white;
+    font-size: 19px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+}
+
+#toText{
+    margin-right: 7px;
+}
+
+.selectArea{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00171f;
+    margin-top: 20px;
+}
+
+.select1,.select2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.select1{
+    border-right: 5px solid #007da7 ;
+    border-radius: 5px;
+}
+
+.select2{
+    border-left: 5px solid #007da7 ;
+    border-radius: 5px;
+}
+#fselect,
+#sselect {
+    padding: 8px 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 150px;
+    background-color: white;
+    color: black;
+}
+/* #fselect,#sselect{
+    padding: 10px 40px 10px 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+*/
+
+.speaker,.copy{
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.speaker:hover,.copy:hover{
+    transform: scale(130%);
+}
+
+#btn{
+    width: 500px;
+    height: 50px;
+    background-color: #00171f;
+    margin-top: 50px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
